@@ -17,15 +17,15 @@ require 'rspec/wait'
 require_relative 'config'
 
 project_root = File.expand_path('../../', __dir__)
-require_all File.join(project_root, 'patches')
-require_all File.join(project_root, 'lib')
+# require_all File.join(project_root, 'patches')
+# require_all File.join(project_root, 'lib')
 require_all File.join(project_root, 'lib/helpers') # superfluous because of line above
-require_all File.join(project_root, 'page_objects/section')
-require_all File.join(project_root, 'page_objects/page')
-require_all File.join(project_root, 'features/support/helpers')
-require_all File.join(project_root, 'features/support/world')
+# require_all File.join(project_root, 'page_objects/section')
+# require_all File.join(project_root, 'page_objects/page')
+# require_all File.join(project_root, 'features/support/helpers')
+# require_all File.join(project_root, 'features/support/world')
 
-include AsyncSupport
+# include AsyncSupport
 
 Registration::DriverRegistration.register_chrome_browser
 

@@ -1,0 +1,12 @@
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/*******************************************************************************
+* @license
+* Copyright (c) 2016 - present Accedo. All Rights Reserved.
+* 
+* This source code, its use, and distribution, is subject to the terms
+* and conditions of the applicable license agreement.
+* 
+* Accedo Build XDK Device Package - Microsoft UWP (@accedo/xdk-device-microsoft-uwp) 4.0.8
+* 
+*******************************************************************************/

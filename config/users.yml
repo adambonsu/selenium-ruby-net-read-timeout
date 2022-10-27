@@ -1,0 +1,83 @@
+local: &local
+
+  fe_test_user:
+    username: testuser@testing.com
+    password: 123456
+
+  fe_hub_user:
+    username: hub_user@itv.com
+    password: 12345
+    gui_id: 2eb84b54-fa00-4238-aaf9-b3706839dcea
+
+  fe_hub_verified_user:
+    username: hub_verified_user@itv.com
+    password: hub12345
+
+  fe_hub_unverified_user:
+    username: hub_unverified_user@itv.com
+    password: hub12345
+
+  fe_hub_plus_annual_user:
+    username: hub_plus_annual@itv.com
+    password: hubplus12345
+
+  hub_plus_stripe_verified_user:
+    username: hub_plus_stripe_verified_user@itv.com
+    password: hubplus12345
+
+  fe_hub_plus_verified_user:
+    username: hub_plus_verified_user@itv.com
+    password: hubplus12345
+    gui_id: bafa4a21-186b-4d48-a311-c0b8bd1ce819
+
+  fe_new_hub_user:
+    username: newhubuser@itv.com
+    password: hub12345
+
+  fe_not_accepted_privacy_policy_user:
+    username: not_accepted_privacy_policy_user@itv.com
+    password: noprivy12345
+    gui_id: 5d4749d5-af62-4e7f-b36f-366266b1daca
+
+  fe_hub_user_with_expired_hub_plus:
+    username: hub_user_with_expired_hub_plus@itv.com
+    password: hubplus12345
+    gui_id: 98d3e78e-731a-4593-8a5f-ffe40e07535c
+    free_trial: true
+
+  hub_user_multiple_profiles:
+    username: hub_user_multiple_profiles@itv.com
+    password: hub12345
+    gui_id: 9et84b61-fa00-3421-aaf9-b3706825gurj
+
+  dev_test_hub_user:
+    username: stubbed@itv.com
+    password: 111111
+
+  dev_test_hub_plus_user:
+    username: stubbed-hub-plus@itv.com
+    password: 111111
+
+sit:
+  <<: *local
+
+browser:
+  <<: *local
+
+amazonfiretv:
+  <<: *local
+
+samsung:
+  <<: *local
+
+sky:
+  <<: *local
+
+freeview:
+  <<: *local
+
+virginmedia:
+  <<: *local
+
+virginmediativo:
+  <<: *local

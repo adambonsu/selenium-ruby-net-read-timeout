@@ -1,0 +1,2 @@
+(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[209],{78432:function(e,n,t){e.exports=t(50847)},23946:function(e,n,t){"use strict";t.r(n);t(78432);var i=(0,t(22934).detection)((function(){var e=navigator.userAgent.toLowerCase();return-1!==e.indexOf("sky")&&console.log("XDK Device detection successful, initializing Sky device abstraction."),-1!==e.indexOf("sky")}));n.default=i}}]);
+//# sourceMappingURL=sky-detection.05fc31db.chunk.js.map

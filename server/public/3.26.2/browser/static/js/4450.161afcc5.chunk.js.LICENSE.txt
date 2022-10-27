@@ -1,0 +1,10 @@
+/*******************************************************************************
+* @license
+* Copyright (c) 2016 - present Accedo. All Rights Reserved.
+* 
+* This source code, its use, and distribution, is subject to the terms
+* and conditions of the applicable license agreement.
+* 
+* Accedo Build XDK Core (@accedo/xdk-core) 4.0.9
+* 
+*******************************************************************************/

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[9745],{48168:function(e,t,n){n.r(t);var a=(0,n(22934).detection)((function(){var e=arguments.length>0&&void 0!==(arguments.length<=0?void 0:arguments[0])?arguments.length<=0?void 0:arguments[0]:"";return-1!==e.toLowerCase().indexOf("freesat")}));t.default=a}}]);
+//# sourceMappingURL=freesat-detection.c63ab881.chunk.js.map

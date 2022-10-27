@@ -1,2 +1,0 @@
-(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[1411],{86604:function(n,t,e){n.exports=e(38650)},46319:function(n,t,e){n.exports=e(80477)},76078:function(n,t,e){"use strict";e.r(t);var a=e(46319),r=e.n(a),c=e(86604),s=e.n(c),u=(0,e(22934).detection)((function(n){var t=["youviewhtml","sony.hbbtv"];return!!r()(t).call(t,(function(t){var e;return s()(e=n.toLowerCase()).call(e,t)}))}));t.default=u}}]);
-//# sourceMappingURL=youview-detection.406ffb9f.chunk.js.map

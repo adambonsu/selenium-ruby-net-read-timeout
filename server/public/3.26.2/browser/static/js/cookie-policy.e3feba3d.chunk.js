@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[3130],{59079:function(n,e,a){a.r(e),a.d(e,{default:function(){return s.Z},CookiesPolicy:function(){return s.C}});var s=a(93891)}}]);

@@ -1,2 +1,0 @@
-(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[3507],{86604:function(e,a,n){e.exports=n(38650)},29240:function(e,a,n){"use strict";n.r(a);var t=n(86604),c=n.n(t),s=(0,n(22934).detection)((function(e){var a;return c()(a=e.toLowerCase()).call(a,"fvc")}));a.default=s}}]);
-//# sourceMappingURL=freeview-detection.ec74e07f.chunk.js.map

@@ -1,2 +1,0 @@
-(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[6749],{78432:function(e,n,t){e.exports=t(50847)},43514:function(e,n,t){"use strict";t.r(n);t(78432);var a=(0,t(22934).detection)((function(){var e=navigator.userAgent.toLowerCase();return-1!==e.indexOf("aft")&&console.log("XDK Device detection successful, initializing Amazon Fire TV device abstraction."),-1!==e.indexOf("aft")}));n.default=a}}]);
-//# sourceMappingURL=aftv-detection.d8b22204.chunk.js.map

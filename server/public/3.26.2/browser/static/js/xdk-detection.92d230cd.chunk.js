@@ -1,3 +1,0 @@
-/*! For license information please see xdk-detection.92d230cd.chunk.js.LICENSE.txt */
-(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[6124],{78432:function(n,a,c){n.exports=c(50847)},47157:function(n,a,c){"use strict";c.r(a);var e=c(78432),t=c.n(e),s=c(22934);var i=(0,s.detection)((function(n){return n=n.toLowerCase(),-1!==t()(n).call(n,"windows nt")&&!window.Windows||-1!==t()(n).call(n,"linux")&&-1!==t()(n).call(n,"x11")||-1!==t()(n).call(n,"macintel")||-1!==t()(n).call(n,"macintosh")}),(function(){return!s.core.isBrowser()}));a.default=i}}]);
-//# sourceMappingURL=xdk-detection.92d230cd.chunk.js.map

@@ -1,2 +1,0 @@
-(self.webpackChunk_itv_fe_cassandra=self.webpackChunk_itv_fe_cassandra||[]).push([[3010],{78432:function(e,i,n){e.exports=n(50847)},1267:function(e,i,n){"use strict";n.r(i);n(78432);var t=(0,n(22934).detection)((function(){var e=-1!==navigator.userAgent.toLowerCase().indexOf("virginmedia");return e&&console.log("XDK Device detection successful, initializing Virgin Media device abstraction."),e}));i.default=t}}]);
-//# sourceMappingURL=virginmedia-detection.54e6845f.chunk.js.map

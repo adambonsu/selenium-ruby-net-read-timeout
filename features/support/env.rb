@@ -16,8 +16,10 @@ require 'rspec/wait'
 
 require_relative 'config'
 
-project_root = File.expand_path('../../', __dir__)
-require_all File.join(project_root, 'lib/helpers')
+require './lib/helpers/driver_registration'
+
+# project_root = File.expand_path('../../', __dir__)
+# require_all File.join(project_root, 'lib/helpers')
 
 Registration::DriverRegistration.register_chrome_browser
 

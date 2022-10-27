@@ -22,7 +22,7 @@ register_chrome_browser
 
 # Capybara automation options
 Capybara.configure do |config|
-  config.app_host = 'https://cassandra:5000/browser'
+  config.app_host = 'https://uk.yahoo.com/'
   config.default_driver = :chrome
   config.default_max_wait_time = 5
 end

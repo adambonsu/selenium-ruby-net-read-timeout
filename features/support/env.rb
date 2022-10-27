@@ -5,7 +5,6 @@ require 'rubygems'
 require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
-require 'site_prism'
 require 'webdrivers'
 require 'rspec/wait'
 

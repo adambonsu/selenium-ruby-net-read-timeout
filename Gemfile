@@ -1,0 +1,23 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'activesupport', '6.0.3.4'
+gem 'allure-cucumber', '2.14.5'
+gem 'capybara', '3.24.0'
+gem 'colorize', '0.8.1'
+gem 'cucumber', '5.2.0'
+gem 'cuke_modeler', '3.12.0'
+gem 'httparty', '0.18.1'
+gem 'json', '2.3.0'
+gem 'jwt', '2.2.1'
+gem 'pry', '0.12.2'
+gem 'rake', '13.0.6'
+gem 'require_all', '3.0.0'
+gem 'rspec', '3.9.0'
+gem 'rspec-wait', '0.0.9'
+gem 'rubocop', '0.93.0'
+gem 'savon', '~> 2.0'
+gem 'selenium-webdriver', '4.1.0'
+gem 'site_prism', '3.7.3'
+gem 'webdrivers', '5.2.0'

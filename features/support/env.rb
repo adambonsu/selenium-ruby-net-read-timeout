@@ -13,8 +13,6 @@ require './lib/helpers/driver_registration'
 
 Registration::DriverRegistration.register_chrome_browser
 
-ENV['SELENIUM_GRID'] = (ENV['SELENIUM_GRID'] || 'false').to_s
-
 # Capybara automation options
 Capybara.configure do |config|
   config.app_host = 'https://cassandra:5000/browser'

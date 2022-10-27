@@ -12,4 +12,5 @@ Create a small project that illustrates this issue
 
 ## To do
 Remove suplerfluous content (make the problem smaller)
+* remove unnecessary gems perhaps?
 Experiment by swapping out app for another one

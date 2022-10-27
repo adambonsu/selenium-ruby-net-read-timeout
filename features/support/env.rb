@@ -2,7 +2,6 @@
 
 require 'rubygems'
 
-require 'allure-cucumber'
 require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
@@ -20,7 +19,7 @@ ENV['SELENIUM_GRID'] = (ENV['SELENIUM_GRID'] || 'false').to_s
 
 # Capybara automation options
 Capybara.configure do |config|
-  config.app_host = Config.get_value(:environment, 'base_url')
+  config.app_host = 'https://cassandra:5000/browser'
   config.default_driver = :chrome
   config.default_max_wait_time = 5
 end

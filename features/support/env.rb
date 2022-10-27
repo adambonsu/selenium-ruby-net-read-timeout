@@ -9,9 +9,16 @@ require 'site_prism'
 require 'webdrivers'
 require 'rspec/wait'
 
-require './lib/helpers/driver_registration'
+def register_chrome_browser
+  options = Selenium::WebDriver::Chrome::Options.new(logging_prefs: { browser: 'ALL' },
+                                                     detach: true, args: ['--ignore-certificate-errors', '--no-sandbox', '--disable-gpu', '--autoplay-policy=no-user-gesture-required'])
 
-Registration::DriverRegistration.register_chrome_browser
+  Capybara.register_driver :chrome do |app|
+    Capybara::Selenium::Driver.new(app, browser: :chrome, capabilities: options)
+  end
+end
+
+register_chrome_browser
 
 # Capybara automation options
 Capybara.configure do |config|

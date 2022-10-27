@@ -152,11 +152,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    site_prism (3.7.3)
-      addressable (~> 2.6)
-      capybara (~> 3.15)
-      site_prism-all_there (>= 0.3.1, < 1.0)
-    site_prism-all_there (0.3.2)
     sys-uname (1.2.2)
       ffi (~> 1.1)
     systemu (2.6.5)
@@ -197,8 +192,7 @@ DEPENDENCIES
   rubocop (= 0.93.0)
   savon (~> 2.0)
   selenium-webdriver (= 4.5.0)
-  site_prism (= 3.7.3)
   webdrivers (= 5.2.0)
 
 BUNDLED WITH
-   2.3.9
+   2.3.24

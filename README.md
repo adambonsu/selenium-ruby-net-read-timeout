@@ -11,5 +11,5 @@ Create a small project that illustrates this issue
 
 
 ## To do
-Recreate the issue
+Remove suplerfluous content (make the problem smaller)
 Experiment by swapping out app for another one

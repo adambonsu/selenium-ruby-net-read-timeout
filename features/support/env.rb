@@ -2,13 +2,13 @@
 
 require 'rubygems'
 
-require 'active_support/core_ext/string/inflections'
+# require 'active_support/core_ext/string/inflections'
 require 'allure-cucumber'
 require 'capybara'
 require 'capybara/cucumber'
-require 'httparty'
-require 'jwt'
-require 'require_all'
+# require 'httparty'
+# require 'jwt'
+# require 'require_all'
 require 'selenium-webdriver'
 require 'site_prism'
 require 'webdrivers'

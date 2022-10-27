@@ -9,8 +9,6 @@ require 'site_prism'
 require 'webdrivers'
 require 'rspec/wait'
 
-require_relative 'config'
-
 require './lib/helpers/driver_registration'
 
 Registration::DriverRegistration.register_chrome_browser

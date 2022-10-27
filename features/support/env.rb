@@ -18,9 +18,6 @@ require_relative 'config'
 
 require './lib/helpers/driver_registration'
 
-# project_root = File.expand_path('../../', __dir__)
-# require_all File.join(project_root, 'lib/helpers')
-
 Registration::DriverRegistration.register_chrome_browser
 
 ENV['SELENIUM_GRID'] = (ENV['SELENIUM_GRID'] || 'false').to_s

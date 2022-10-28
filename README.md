@@ -16,12 +16,14 @@ Create a small project that illustrates this issue
 
 
 ## To do
-Remove suplerfluous content (make the problem smaller)
-* remove/manipulate capybara config settings
-* prove problem is not selenium webdriver
+* remove/manipulate capybara config settings (https://www.kloia.com/blog/using-capybara-effectively-with-8-useful-configuration-parameters)
+* use latest version of ruby
+* create a selenium solution to replace capybara
+* seek alternatives to capybara (NB: site_prism is "A Page Object Model DSL for Capybara")
+  * Selenium: https://alternativeto.net/software/capybara/
+  
 
 
 ## Useful resources
 https://railsware.com/blog/accessing-application-session-in-capybara/
-https://www.kloia.com/blog/using-capybara-effectively-with-8-useful-configuration-parameters
 

@@ -6,7 +6,6 @@ require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'webdrivers'
-require 'rspec/wait'
 
 def register_chrome_browser
   options = Selenium::WebDriver::Chrome::Options.new(logging_prefs: { browser: 'ALL' },
@@ -26,5 +25,4 @@ Capybara.configure do |config|
   config.default_max_wait_time = 5
 end
 
-World(Capybara,
-  RSpec::Wait)
+World(Capybara)

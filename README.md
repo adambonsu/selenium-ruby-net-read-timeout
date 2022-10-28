@@ -18,6 +18,7 @@ Create a small project that illustrates this issue
 ## To do
 Remove suplerfluous content (make the problem smaller)
 * remove/manipulate capybara config settings
+* prove problem is not selenium webdriver
 
 
 ## Useful resources

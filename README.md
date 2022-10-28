@@ -4,6 +4,8 @@ Within a Capybara session, when launching and navigating from one page to anothe
 
 But if there is a pause (1-2seconds) between the launch and an interaction, the session hangs and eventually returns a Net::ReadTimeout error
 
+If the sleep is reduced from 5 to 3 seconds, the second page is loaded, but a Net::ReadTimeout still results?!?!?!
+
 ## Task
 Create a small project that illustrates this issue
 * Ideally one page <<to share problem on stack overflow>>

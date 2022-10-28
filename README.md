@@ -6,7 +6,7 @@
 
 * If there is a delay (1-2seconds) between the launch and an interaction, the session hangs and eventually returns a Net::ReadTimeout error
 
-* If the delay is reduced from 5 to 3 seconds, the second page is loaded, but a Net::ReadTimeout still results?!?!?!
+* If the delay is reduced from 5 to 3 seconds, the second page is loaded, but a Net::ReadTimeout still results?!?!?! POTENTIAL CLUE
 
 * Increasing Capybara::config.default_max_wait_time to 30000 - no affect
 * Is this even a cucumber thing?
@@ -25,5 +25,6 @@ Experiment by swapping out app for another one
 
 
 ## Useful resources
+https://railsware.com/blog/accessing-application-session-in-capybara/
 https://www.kloia.com/blog/using-capybara-effectively-with-8-useful-configuration-parameters
 

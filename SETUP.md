@@ -12,5 +12,5 @@ bundle install
 
 ## Execute test script
 ```
-bundle exec cucumber features
+bundle exec ruby test.rb
 ```

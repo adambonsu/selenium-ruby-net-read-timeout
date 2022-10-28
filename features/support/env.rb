@@ -5,7 +5,6 @@ require 'rubygems'
 require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
-require 'webdrivers'
 
 def register_chrome_browser
   options = Selenium::WebDriver::Chrome::Options.new(logging_prefs: { browser: 'ALL' },

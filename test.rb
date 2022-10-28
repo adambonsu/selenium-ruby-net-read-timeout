@@ -23,13 +23,13 @@ def register_chrome_browser
   end
 end
 
-register_chrome_browser
-
-# Capybara automation options
-Capybara.configure do |config|
-  config.app_host = 'https://uk.yahoo.com/'
-  config.default_driver = :chrome
+def configure_capybara
+  Capybara.configure do |config|
+    config.app_host = 'https://uk.yahoo.com/'
+    config.default_driver = :chrome
+  end
 end
+
 
 def recreate_timeout(delay)
     Capybara.current_session.visit('http://www.google.com') # browser launches and loads google.com
@@ -37,8 +37,8 @@ def recreate_timeout(delay)
     Capybara.current_session.visit('https://example.com/') # Net::ReadTimeout with #<TCPSocket:(closed)> (Net::ReadTimeout)
 end
 
-
-
+register_chrome_browser
+configure_capybara
 recreate_timeout(delay_between_calls)
 sleep delay_after_test
 

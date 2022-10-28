@@ -8,6 +8,7 @@
 
 * If the delay is reduced from 5 to 3 seconds, the second page is loaded, but a Net::ReadTimeout still results?!?!?!
     POTENTIAL CLUE - the scenario should complete after the second page is loaded - is a cucumber after step being executed (to quit the capybara session...?)
+    NO - having stripped out the cucumber infrastructure, can still intermittently (50%) recreate the issue with a 3 second delay between calls
 
 * Increasing Capybara::config.default_max_wait_time to 30000 - no affect
 * Is this even a cucumber thing?

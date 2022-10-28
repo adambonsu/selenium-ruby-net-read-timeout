@@ -1,5 +1,31 @@
 # Activity
 
+## Recreated intermittently (50%): recreate_timeout(3)
+recreate_timeout(3)
+C02W63XEHTD6:capybara-cucumber-experiment-net-read-timeout adambons$ bundle exec ruby test.rb
+```
+Traceback (most recent call last):
+        18: from test.rb:33:in `<main>'
+        17: from test.rb:28:in `recreate_timeout'
+        16: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/capybara-3.37.1/lib/capybara/session.rb:278:in `visit'
+        15: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/capybara-3.37.1/lib/capybara/selenium/driver.rb:104:in `visit'
+        14: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/common/navigation.rb:32:in `to'
+        13: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/remote/bridge.rb:93:in `get'
+        12: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/remote/bridge.rb:625:in `execute'
+        11: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+        10: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/remote/http/default.rb:77:in `request'
+         9: from /Users/adambons/.rvm/gems/ruby-2.7.1@capybara-cucumber-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/remote/http/default.rb:118:in `response_for'
+         8: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/http.rb:1492:in `request'
+         7: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/http.rb:1519:in `transport_request'
+         6: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/http.rb:1519:in `catch'
+         5: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/http.rb:1528:in `block in transport_request'
+         4: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/http/response.rb:31:in `read_new'
+         3: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/http/response.rb:42:in `read_status_line'
+         2: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/protocol.rb:201:in `readline'
+         1: from /Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/protocol.rb:191:in `readuntil'
+/Users/adambons/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0/net/protocol.rb:217:in `rbuf_fill': Net::ReadTimeout with #<TCPSocket:(closed)> (Net::ReadTimeout)
+```
+
 ## Recreated outside of cucumber
 ```
 C02W63XEHTD6:capybara-cucumber-experiment-net-read-timeout adambons$ ruby test.rb

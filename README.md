@@ -6,9 +6,10 @@
 <<What about launching and interacting with a page???>>
 * problem is not with the app
 * problem is not related to cucumber
-* Increasing Capybara::config.default_max_wait_time to 30000 - no affect
 * Using ruby 3.0.0 does not fix the issue
 
+## What I have already tried (and did not work):
+* Increasing Capybara::config.default_max_wait_time to 120
 
 ## Task
 Create a small project that illustrates this issue
@@ -16,7 +17,6 @@ Create a small project that illustrates this issue
 
 
 ## To do
-* Increase timeout to 120 and retries Net::ReadTimeout (Net::ReadTimeout) Selenium Ruby
 * Add the selenium driver desired capabilities Getting Net::ReadTimeout: visiting a website in Ruby Capybara Cucumber
 * remove/manipulate capybara config settings
 * create a selenium solution to replace capybara

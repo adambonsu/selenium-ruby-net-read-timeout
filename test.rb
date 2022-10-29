@@ -27,6 +27,7 @@ def configure_capybara
   Capybara.configure do |config|
     config.app_host = 'https://uk.yahoo.com/'
     config.default_driver = :chrome
+    config.default_max_wait_time = 120
   end
 end
 

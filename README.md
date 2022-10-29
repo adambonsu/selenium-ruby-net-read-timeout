@@ -10,6 +10,7 @@
 
 ## Environment
 * Browser: Chrome Version 107.0.5304.87
+* Chromedriver: ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942})
 * Ruby: 3.0.0
 * OS: macOS Monterey version 12.5
 
@@ -24,20 +25,8 @@
 
 
 ## To do
-* Attempted to run suite on personal mbp after restarting it
-    Personal MBP
-    macOS Monterey Version 12.6
-        - Processor 2.8 GHz Quad-Core Intel Core i7
-        - Memory 16GB 2133 MHz LPDDR3
-        - Graphics Intel Iris Plus Graphics 655 1536 MB
-     - could not recreate?!!?!? - issue with memory?
-    Work MBP
-     macOS Monterey Version 12.5
-        - Processor 2.9 GHz Quad-Core Intel Core i7
-        - Memory 16GB 2133 MHz LPDDR3
-        - Graphics Intel HD Graphics 630 1536 MB
-  * Compare debug logs between machines
 * Attempt to recreate with selenium driver
+* post bug to mailing list: https://github.com/teamcapybara/capybara/blob/master/CONTRIBUTING.md
 * Ask on stack overflow if there's a way to use an alternative to http when running locally
 * investigate jenkins re-tries for Net::ReadTimeout errors (short term solution)
 * seek alternatives to capybara (NB: site_prism is "A Page Object Model DSL for Capybara")

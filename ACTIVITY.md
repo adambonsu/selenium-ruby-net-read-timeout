@@ -1,6 +1,18 @@
 # Activity
 
 ## Compare debug logs between machines (personal vs work)
+    Personal MBP
+    macOS Monterey Version 12.6
+        - Processor 2.8 GHz Quad-Core Intel Core i7
+        - Memory 16GB 2133 MHz LPDDR3
+        - Graphics Intel Iris Plus Graphics 655 1536 MB
+     - could not recreate?!!?!? - issue with memory?
+    Work MBP
+     macOS Monterey Version 12.5
+        - Processor 2.9 GHz Quad-Core Intel Core i7
+        - Memory 16GB 2133 MHz LPDDR3
+        - Graphics Intel HD Graphics 630 1536 MB
+    => cannot identify environment diffs between work and personal debug logs 
 ### Personal
 ```
 MBP-AB:capybara-experiment-net-read-timeout bonsuadam$ bundle exec ruby -d test.rb

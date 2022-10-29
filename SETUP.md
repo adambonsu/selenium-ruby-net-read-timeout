@@ -11,7 +11,12 @@ gem install bundler
 bundle install
 ```
 
-## Execute test script
+## Execute Capybara test script
 ```
-bundle exec ruby -d test.rb
+bundle exec ruby -d test_capybara.rb
+```
+
+## Execute Selenium test script
+```
+bundle exec ruby -d test_selenium.rb
 ```

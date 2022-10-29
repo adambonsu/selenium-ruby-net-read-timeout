@@ -1,5 +1,7 @@
 # Activity
 
+## Attempt to recreate with selenium driver
+Can recreate issue without capybara
 ## Compare debug logs between machines (personal vs work)
     Personal MBP
     macOS Monterey Version 12.6

@@ -1,4 +1,5 @@
 ## What do we know?
+* Can recreate issue with just chromedriver on work mbp
 * Within a Capybara session, when launching and navigating from one page to another is fine if done in quick succession (no delay between calls)
 * If there is a delay (1-2seconds) between the launch and an interaction, the session hangs and eventually returns a Net::ReadTimeout error
 * can consistently recreate issue with a 5 second delay between calls
@@ -25,7 +26,6 @@
 
 
 ## To do
-* Attempt to recreate with selenium driver
 * post bug to mailing list: https://github.com/teamcapybara/capybara/blob/master/CONTRIBUTING.md
 * Ask on stack overflow if there's a way to use an alternative to http when running locally
 * investigate jenkins re-tries for Net::ReadTimeout errors (short term solution)

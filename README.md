@@ -36,9 +36,7 @@
         - Processor 2.9 GHz Quad-Core Intel Core i7
         - Memory 16GB 2133 MHz LPDDR3
         - Graphics Intel HD Graphics 630 1536 MB
-  * Restart this Machine and re-run test
-    - Re-running test on Work MBP after re-start... test still consistently failing with net read timeout error
-  * Compoare debug logs between machines
+  * Compare debug logs between machines
 * Attempt to recreate with selenium driver
 * Ask on stack overflow if there's a way to use an alternative to http when running locally
 * investigate jenkins re-tries for Net::ReadTimeout errors (short term solution)

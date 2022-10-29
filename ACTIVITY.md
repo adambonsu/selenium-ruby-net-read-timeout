@@ -1,5 +1,109 @@
 # Activity
 
+## Compare debug logs between machines (personal vs work)
+### Personal
+```
+MBP-AB:capybara-experiment-net-read-timeout bonsuadam$ bundle exec ruby -d test.rb
+Exception `LoadError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/rubygems.rb:1348 - cannot load such file -- rubygems/defaults/operating_system
+Exception `LoadError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/rubygems.rb:1356 - cannot load such file -- rubygems/defaults/ruby
+Exception `NameError' at /Users/bonsuadam/.rvm/gems/ruby-3.0.0@capybara-experiment-net-read-timeout/gems/bundler-2.3.24/lib/bundler/rubygems_integration.rb:404 - method `gem' not defined in #<Class:Kernel>
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `LoadError' at /Users/bonsuadam/.rvm/gems/ruby-3.0.0@capybara-experiment-net-read-timeout/gems/addressable-2.8.1/lib/addressable/idna/native.rb:20 - cannot load such file -- idn
+Using Ext extension for JSON.
+Exception `SyntaxError' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/forwardable/impl.rb:4 - <compiled>: syntax error, unexpected end-of-input
+Exception `LoadError' at /Users/bonsuadam/.rvm/gems/ruby-3.0.0@capybara-experiment-net-read-timeout/gems/websocket-1.2.9/lib/websocket.rb:43 - cannot load such file -- websocket-native
+2022-10-29 18:54:30 DEBUG Selenium Executing Process ["/Users/bonsuadam/bin/chromedriver", "--port=9515"]
+Exception `IO::EINPROGRESSWaitWritable' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/socket.rb:1214 - Operation now in progress - connect(2) would block
+Exception `Errno::ECONNREFUSED' at /Users/bonsuadam/.rvm/gems/ruby-3.0.0@capybara-experiment-net-read-timeout/gems/selenium-webdriver-4.5.0/lib/selenium/webdriver/common/socket_poller.rb:87 - Connection refused
+2022-10-29 18:54:30 DEBUG Selenium polling for socket on ["127.0.0.1", 9515]
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Exception `IO::EINPROGRESSWaitWritable' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/socket.rb:1214 - Operation now in progress - connect(2) would block
+Exception `Errno::EISCONN' at /Users/bonsuadam/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/socket.rb:1214 - Socket is already connected - connect(2) for 127.0.0.1:9515
+2022-10-29 18:54:30 INFO Selenium -> POST session
+2022-10-29 18:54:30 INFO Selenium    >>> http://127.0.0.1:9515/session | {"capabilities":{"alwaysMatch":{"browserName":"chrome","goog:chromeOptions":{"args":["--ignore-certificate-errors","--no-sandbox","--disable-gpu","--autoplay-policy=no-user-gesture-required"],"detach":true},"goog:loggingPrefs":{"browser":"ALL"}}}}
+2022-10-29 18:54:30 DEBUG Selenium      > {"Accept"=>"application/json", "Content-Type"=>"application/json; charset=UTF-8", "User-Agent"=>"selenium/4.5.0 (ruby macosx)", "Content-Length"=>"247"}
+2022-10-29 18:54:31 INFO Selenium <- {"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"107.0.5304.87","chrome":{"chromedriverVersion":"107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942})","userDataDir":"/var/folders/8t/dw2xb2ys6w9cf07sn1yjvhvw0000gn/T/.com.google.Chrome.IHHNhs"},"goog:chromeOptions":{"debuggerAddress":"localhost:52526"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"d4821ff8c191b4b1d75cb15dbd770f57"}}
+2022-10-29 18:54:31 INFO Selenium -> POST session/d4821ff8c191b4b1d75cb15dbd770f57/url
+2022-10-29 18:54:31 INFO Selenium    >>> http://127.0.0.1:9515/session/d4821ff8c191b4b1d75cb15dbd770f57/url | {"url":"http://www.google.com"}
+2022-10-29 18:54:31 DEBUG Selenium      > {"Accept"=>"application/json", "Content-Type"=>"application/json; charset=UTF-8", "User-Agent"=>"selenium/4.5.0 (ruby macosx)", "Content-Length"=>"31"}
+2022-10-29 18:54:32 INFO Selenium <- {"value":null}
+2022-10-29 18:54:37 INFO Selenium -> POST session/d4821ff8c191b4b1d75cb15dbd770f57/url
+2022-10-29 18:54:37 INFO Selenium    >>> http://127.0.0.1:9515/session/d4821ff8c191b4b1d75cb15dbd770f57/url | {"url":"https://example.com/"}
+2022-10-29 18:54:37 DEBUG Selenium      > {"Accept"=>"application/json", "Content-Type"=>"application/json; charset=UTF-8", "User-Agent"=>"selenium/4.5.0 (ruby macosx)", "Content-Length"=>"30"}
+2022-10-29 18:54:38 INFO Selenium <- {"value":null}
+2022-10-29 18:54:38 INFO Selenium -> DELETE session/d4821ff8c191b4b1d75cb15dbd770f57
+2022-10-29 18:54:38 INFO Selenium <- {"value":null}
+D, [2022-10-29T18:54:38.142356 #8357] DEBUG -- : #<ChildProcess::Unix::ForkExecProcess:0x00007fa96da1b710 @args=["/Users/bonsuadam/bin/chromedriver", "--port=9515"], @started=true, @exit_code=nil, @io=#<ChildProcess::Unix::IO:0x00007fa96da1b5f8 @stderr=#<IO:<STDOUT>>, @stdout=#<IO:<STDOUT>>>, @cwd=nil, @detach=false, @duplex=false, @leader=true, @environment={}, @pid=8358> : [{:pid=>nil, :status=>nil}]
+D, [2022-10-29T18:54:38.158096 #8357] DEBUG -- : #<ChildProcess::Unix::ForkExecProcess:0x00007fa96da1b710 @args=["/Users/bonsuadam/bin/chromedriver", "--port=9515"], @started=true, @exit_code=nil, @io=#<ChildProcess::Unix::IO:0x00007fa96da1b5f8 @stderr=#<IO:<STDOUT>>, @stdout=#<IO:<STDOUT>>>, @cwd=nil, @detach=false, @duplex=false, @leader=true, @environment={}, @pid=8358> : ["polling 20 seconds for exit"]
+D, [2022-10-29T18:54:38.158396 #8357] DEBUG -- : #<ChildProcess::Unix::ForkExecProcess:0x00007fa96da1b710 @args=["/Users/bonsuadam/bin/chromedriver", "--port=9515"], @started=true, @exit_code=nil, @io=#<ChildProcess::Unix::IO:0x00007fa96da1b5f8 @stderr=#<IO:<STDOUT>>, @stdout=#<IO:<STDOUT>>>, @cwd=nil, @detach=false, @duplex=false, @leader=true, @environment={}, @pid=8358> : [{:pid=>nil, :status=>nil}]
+D, [2022-10-29T18:54:38.259955 #8357] DEBUG -- : #<ChildProcess::Unix::ForkExecProcess:0x00007fa96da1b710 @args=["/Users/bonsuadam/bin/chromedriver", "--port=9515"], @started=true, @exit_code=nil, @io=#<ChildProcess::Unix::IO:0x00007fa96da1b5f8 @stderr=#<IO:<STDOUT>>, @stdout=#<IO:<STDOUT>>>, @cwd=nil, @detach=false, @duplex=false, @leader=true, @environment={}, @pid=8358> : [{:pid=>8358, :status=>#<Process::Status: pid 8358 exit 0>}]
+MBP-AB:capybara-experiment-net-read-timeout bonsuadam$ 
+```
+
 ## Comparing logs - No delay between capybara calls vs 5s delay between capybara calls
 ### 5s delay between capybara calls
 ```

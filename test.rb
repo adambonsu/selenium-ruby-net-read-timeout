@@ -30,6 +30,7 @@ def configure_capybara
     config.default_driver = :chrome
     config.default_max_wait_time = 120
   end
+  Capybara.session_name = "some other session"
 end
 
 

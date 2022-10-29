@@ -1,5 +1,6 @@
 ## Set up test environment
 ```
+bash --login
 rm Gemfile.lock 2>/dev/null
 rvm install ruby-3.0.0 2>/dev/null
 rvm use ruby-3.0.0

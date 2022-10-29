@@ -24,14 +24,32 @@
 
 
 ## To do
-* Ask on stack overflow if there's a way to use an alternative to http when running locally 
+* Attempted to run suite on personal mbp after restarting it
+    Personal MBP
+    macOS Monterey Version 12.6
+        - Processor 2.8 GHz Quad-Core Intel Core i7
+        - Memory 16GB 2133 MHz LPDDR3
+        - Graphics Intel Iris Plus Graphics 655 1536 MB
+     - could not recreate?!!?!? - issue with memory?
+    Work MBP
+     macOS Monterey Version 12.5
+        - Processor 2.9 GHz Quad-Core Intel Core i7
+        - Memory 16GB 2133 MHz LPDDR3
+        - Graphics Intel HD Graphics 630 1536 MB
+  * Restart this Machine and re-run test
+    - Re-running test on Work MBP after re-start... test still consistently failing with net read timeout error
+  * Compoare debug logs between machines
+* Attempt to recreate with selenium driver
+* Ask on stack overflow if there's a way to use an alternative to http when running locally
+* investigate jenkins re-tries for Net::ReadTimeout errors (short term solution)
+* seek alternatives to capybara (NB: site_prism is "A Page Object Model DSL for Capybara")
+  * Selenium: https://alternativeto.net/software/capybara/
+  * create a selenium solution to replace capybara
 * The default timeout is 60 seconds. One thing to try is to adjust the internal timeout to see if that fixes it (https://stackoverflow.com/questions/26354834/netreadtimeout-netreadtimeout-selenium-ruby)
 * Prove cannot be recreated when run out of process - Run the app server out-of-process (to exclude a Capybara threading issue)
 * Add the selenium driver desired capabilities Getting Net::ReadTimeout: visiting a website in Ruby Capybara Cucumber
 * remove/manipulate capybara config settings
-* create a selenium solution to replace capybara
-* seek alternatives to capybara (NB: site_prism is "A Page Object Model DSL for Capybara")
-  * Selenium: https://alternativeto.net/software/capybara/
+
   
 
 

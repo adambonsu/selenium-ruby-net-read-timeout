@@ -16,7 +16,15 @@ Create a small project that illustrates this issue
 * Ideally one page <<to share problem on stack overflow>>
 
 
+## Options
+* Replace Net::HTTP with another HTTP client (like Curb) to see if it solves the problem.
+    How to do this is explained on the wiki: http://code.google.com/p/selenium/wiki/RubyBindings#Using_Curb_or_your_own_HTTP_client
+* use RSpec::Retry which adds a retry option for intermittently failing specs (ref: https://stackoverflow.com/questions/26354834/netreadtimeout-netreadtimeout-selenium-ruby)
+
+
 ## To do
+* The default timeout is 60 seconds. One thing to try is to adjust the internal timeout to see if that fixes it (https://stackoverflow.com/questions/26354834/netreadtimeout-netreadtimeout-selenium-ruby)
+* Prove cannot be recreated when run out of process - Run the app server out-of-process (to exclude a Capybara threading issue)
 * Add the selenium driver desired capabilities Getting Net::ReadTimeout: visiting a website in Ruby Capybara Cucumber
 * remove/manipulate capybara config settings
 * create a selenium solution to replace capybara
@@ -25,9 +33,14 @@ Create a small project that illustrates this issue
   
 
 
+
 ## Useful resources
 https://railsware.com/blog/accessing-application-session-in-capybara/
 Capybara Settings: https://www.kloia.com/blog/using-capybara-effectively-with-8-useful-configuration-parameters
+https://www.browserstack.com/guide/understanding-selenium-timeouts
+https://stackoverflow.com/questions/17753655/timeouterror-using-selenium-webdriver-in-ruby
+https://github.com/seleniumhq/selenium-google-code-issue-archive/issues/1439
+
 
 ## Similar issues on Stack overflow
 https://stackoverflow.com/questions/61234467/capybara-with-selenium-throws-netreadtimeout-error-intermittently-when-using

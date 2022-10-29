@@ -12,5 +12,5 @@ bundle install
 
 ## Execute test script
 ```
-bundle exec ruby test.rb
+bundle exec ruby -d test.rb
 ```

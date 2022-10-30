@@ -12,6 +12,9 @@ bundle install
 ```
 
 ## Execute Selenium test script
+* Loads google.com
+* waits 5 seconds (by default)
+* attempts to load example.com => Net::ReadTimeout
 ```
 bundle exec ruby -d test_selenium.rb
 ```

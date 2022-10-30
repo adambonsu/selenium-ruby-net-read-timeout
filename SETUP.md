@@ -4,16 +4,11 @@ bash --login
 rm Gemfile.lock 2>/dev/null
 rvm install ruby-3.0.0 2>/dev/null
 rvm use ruby-3.0.0
-rvm --force gemset delete capybara-experiment-net-read-timeout 2>/dev/null
-rvm gemset create capybara-experiment-net-read-timeout
-rvm use ruby-3.0.0@capybara-experiment-net-read-timeout
+rvm --force gemset delete selenium-experiment-net-read-timeout 2>/dev/null
+rvm gemset create selenium-experiment-net-read-timeout
+rvm use ruby-3.0.0@selenium-experiment-net-read-timeout
 gem install bundler
 bundle install
-```
-
-## Execute Capybara test script
-```
-bundle exec ruby -d test_capybara.rb
 ```
 
 ## Execute Selenium test script

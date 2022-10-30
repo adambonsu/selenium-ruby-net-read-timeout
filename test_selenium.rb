@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'selenium-webdriver'
+require 'webdrivers'
 
 def delay_between_calls
     ARGV.length > 0 ? ARGV[0].to_i : 5

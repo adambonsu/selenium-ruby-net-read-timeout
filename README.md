@@ -16,7 +16,8 @@
 * OS: macOS Monterey version 12.5
 
 ## What I have already tried (and did not work):
-* Increasing Capybara::config.default_max_wait_time to 120
+* setting client (Selenium::WebDriver::Remote::Http::Default.new) to 120 (seconds)
+
 
 
 ## Options

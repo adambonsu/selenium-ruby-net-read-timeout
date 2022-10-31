@@ -4,9 +4,9 @@ bash --login
 rm Gemfile.lock 2>/dev/null
 rvm install ruby-3.0.0 2>/dev/null
 rvm use ruby-3.0.0
-rvm --force gemset delete selenium-experiment-net-read-timeout 2>/dev/null
-rvm gemset create selenium-experiment-net-read-timeout
-rvm use ruby-3.0.0@selenium-experiment-net-read-timeout
+rvm --force gemset delete selenium-ruby-net-read-timeout 2>/dev/null
+rvm gemset create selenium-ruby-net-read-timeout
+rvm use ruby-3.0.0@selenium-ruby-net-read-timeout
 gem install bundler
 bundle install
 ```

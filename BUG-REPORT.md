@@ -100,7 +100,7 @@ driver.quit
 
 ## Logs
 ```
-C02W63XEHTD6:capybara-experiment-net-read-timeout adambons$ bundle exec ruby -d test_selenium.rb
+C02W63XEHTD6:selenium-ruby-net-read-timeout adambons$ bundle exec ruby -d test_selenium.rb
 Exception `LoadError' at /Users/adambons/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/rubygems.rb:1348 - cannot load such file -- rubygems/defaults/operating_system
 Exception `LoadError' at /Users/adambons/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/rubygems.rb:1356 - cannot load such file -- rubygems/defaults/ruby
 Exception `NameError' at /Users/adambons/.rvm/gems/ruby-3.0.0@selenium-experiment-net-read-timeout/gems/bundler-2.3.24/lib/bundler/rubygems_integration.rb:404 - method `gem' not defined in #<Class:Kernel>

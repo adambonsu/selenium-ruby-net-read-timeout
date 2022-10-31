@@ -1,7 +1,7 @@
-# Ruby Binding - Local Client - 5 second delay between session calls - Net::ReadTimeout: Net::ReadTimeout with #<TCPSocket:(closed)>
+# Ruby - Local Client - 5 second delay between session calls - Net::ReadTimeout: Net::ReadTimeout with #<TCPSocket:(closed)>
 
 ## What is happening
-* Using chromedriver, navigate to a url ('https://google.com'), wait 5 seconds, then attempt to navigate to a different url ('https://example.com) => Net::ReadTimeout error
+* Using Ruby Binding for chromedriver (Local Client), navigate to a url ('https://google.com'), wait 5 seconds, then attempt to navigate to a different url ('https://example.com) => Net::ReadTimeout error
 
 ## Expected behaviour
 * Attempt to navigate to a different url successfully loads the webpage

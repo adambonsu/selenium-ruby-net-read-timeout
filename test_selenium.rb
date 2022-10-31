@@ -23,9 +23,9 @@ def register_chrome_browser
 end
 
 def recreate_issue(delay_between_calls)
-  driver.get 'http://www.google.com'
+  driver.get 'https://www.google.com'
   sleep(delay_between_calls)
-  driver.get 'https://example.com/'
+  driver.get 'https://example.com'
 end
 
 Selenium::WebDriver.logger.level = :debug

@@ -1,13 +1,9 @@
 ## What do we know?
 * Can recreate issue with just chromedriver on work mbp
-* Within a Capybara session, when launching and navigating from one page to another is fine if done in quick succession (no delay between calls)
+* Within a chromedriver session, when launching and navigating from one page to another is fine if done in quick succession (no delay between calls)
 * If there is a delay (1-2seconds) between the launch and an interaction, the session hangs and eventually returns a Net::ReadTimeout error
-* can consistently recreate issue with a 5 second delay between calls
-* can still intermittently (50%) recreate the issue with a 3 second delay between calls
-<<What about launching and interacting with a page???>>
-* problem is not with the app
-* problem is not related to cucumber
-* Using ruby 3.0.0 does not fix the issue
+* Can consistently recreate issue with a 5 second delay between calls
+* Can still intermittently (50%) recreate the issue with a 3 second delay between calls
 
 ## Environment
 * Browser: Chrome Version 107.0.5304.87
@@ -17,13 +13,13 @@
 * OS: macOS Monterey version 12.5
 
 ## What I have already tried (and did not work):
-* setting client (Selenium::WebDriver::Remote::Http::Default.new) to 120 (seconds)
-
+* Setting client (Selenium::WebDriver::Remote::Http::Default.new) to 120 (seconds)
+* Using the latest ruby version: 3.0.0
+* Using the latest selenium webdriver ruby bindings gem: 4.5.0
+* Replacing Net::HTTP with another HTTP client (like Curb): http://code.google.com/p/selenium/wiki/RubyBindings#Using_Curb_or_your_own_HTTP_client
 
 
 ## Options
-* Replace Net::HTTP with another HTTP client (like Curb) to see if it solves the problem.
-    How to do this is explained on the wiki: http://code.google.com/p/selenium/wiki/RubyBindings#Using_Curb_or_your_own_HTTP_client
 * use RSpec::Retry which adds a retry option for intermittently failing specs (ref: https://stackoverflow.com/questions/26354834/netreadtimeout-netreadtimeout-selenium-ruby)
 
 

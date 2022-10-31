@@ -1,10 +1,10 @@
 # Ruby - Local Client - 5 second delay between session calls - Net::ReadTimeout: Net::ReadTimeout with #<TCPSocket:(closed)>
 
 ## What is happening
-* Using Ruby Binding for chromedriver (Local Client), navigate to a url ('https://google.com'), wait 5 seconds, then attempt to navigate to a different url ('https://example.com) => Net::ReadTimeout error
+Using Ruby Binding for chromedriver (Local Client), navigate to a url ('https://google.com'), wait 5 seconds, then attempt to navigate to a different url ('https://example.com) => Net::ReadTimeout error
 
-## Expected behaviour
-* Attempt to navigate to a different url successfully loads the webpage
+## Expected behaviour
+Attempt to navigate to a different url successfully loads the webpage
 
 ## Environment
 * Browser: Chrome Version 107.0.5304.87
@@ -23,7 +23,7 @@
 * Replacing Net::HTTP with another HTTP client (like Curb): http://code.google.com/p/selenium/wiki/RubyBindings#Using_Curb_or_your_own_HTTP_client
 
 
-## Set up test environment
+## Set up test environment
 ```
 bash --login
 rm Gemfile.lock 2>/dev/null
@@ -58,7 +58,7 @@ gem 'selenium-webdriver', '4.5.0'
 gem 'webdrivers', '5.2.0'
 ```
 
-## test_selenium.rb
+## test_selenium.rb
 ```
 # frozen_string_literal: true
 
@@ -98,7 +98,7 @@ driver.quit
 ```
 
 
-## Logs
+## Logs
 ```
 C02W63XEHTD6:selenium-ruby-net-read-timeout adambons$ bundle exec ruby -d test_selenium.rb
 Exception `LoadError' at /Users/adambons/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/rubygems.rb:1348 - cannot load such file -- rubygems/defaults/operating_system

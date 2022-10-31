@@ -30,6 +30,7 @@ def recreate_issue(delay_between_calls)
   driver.get 'https://example.com/'
 end
 
+Selenium::WebDriver.logger.level = :debug
 register_chrome_browser
 recreate_issue(delay_between_calls)
 sleep delay_after_test

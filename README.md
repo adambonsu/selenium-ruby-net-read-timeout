@@ -12,6 +12,7 @@
 ## Environment
 * Browser: Chrome Version 107.0.5304.87
 * Chromedriver: ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942})
+* Language Bindings: Ruby 'selenium-webdriver' gem, version '4.5.0'
 * Ruby: 3.0.0
 * OS: macOS Monterey version 12.5
 
@@ -27,12 +28,10 @@
 
 
 ## To do
+* add extra logging to output
 * post bug to mailing list: https://github.com/teamcapybara/capybara/blob/master/CONTRIBUTING.md
 * Ask on stack overflow if there's a way to use an alternative to http when running locally
 * investigate jenkins re-tries for Net::ReadTimeout errors (short term solution)
-* seek alternatives to capybara (NB: site_prism is "A Page Object Model DSL for Capybara")
-  * Selenium: https://alternativeto.net/software/capybara/
-  * create a selenium solution to replace capybara
 * The default timeout is 60 seconds. One thing to try is to adjust the internal timeout to see if that fixes it (https://stackoverflow.com/questions/26354834/netreadtimeout-netreadtimeout-selenium-ruby)
 * Prove cannot be recreated when run out of process - Run the app server out-of-process (to exclude a Capybara threading issue)
 * Add the selenium driver desired capabilities Getting Net::ReadTimeout: visiting a website in Ruby Capybara Cucumber

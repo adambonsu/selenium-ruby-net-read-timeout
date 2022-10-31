@@ -58,7 +58,8 @@ gem 'selenium-webdriver', '4.5.0'
 gem 'webdrivers', '5.2.0'
 ```
 
-## test_selenium.rb
+## Short, Self Contained, Correct (Compilable), Example
+test_selenium.rb
 ```
 # frozen_string_literal: true
 

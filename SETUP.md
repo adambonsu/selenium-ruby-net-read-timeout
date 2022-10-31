@@ -15,7 +15,7 @@ bundle install
 * Loads a chrome browser and visits google.com
 * Delay of 5 seconds (by default)
 * Attempts to visit example.com => Net::ReadTimeout
-* Note: Can pass in a Delay value via the command line
+* Note: Can pass in a Delay value via the command line e.g `bundle exec ruby -d test_selenium.rb 0`
 ```
 bundle exec ruby -d test_selenium.rb
 ```

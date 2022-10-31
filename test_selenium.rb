@@ -19,9 +19,7 @@ end
 def register_chrome_browser
     options = Selenium::WebDriver::Chrome::Options.new(logging_prefs: { browser: 'ALL' },
         detach: true, args: ['--ignore-certificate-errors', '--no-sandbox', '--disable-gpu', '--autoplay-policy=no-user-gesture-required'])
-    client = Selenium::WebDriver::Remote::Http::Default.new
-    client.read_timeout = 120
-    @driver = Selenium::WebDriver.for :chrome, :capabilities => options, :http_client => client
+    @driver = Selenium::WebDriver.for :chrome, :capabilities => options
 end
 
 def recreate_issue(delay_between_calls)

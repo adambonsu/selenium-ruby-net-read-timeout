@@ -1,5 +1,6 @@
 # Activity
-
+## Raised issue with chromedriver: Issue 4256: Ruby - Local Client - 5 second delay between session calls - Net::ReadTimeout: Net::ReadTimeout with #<TCPSocket:(closed)>
+Reported by adam@bonsu.io  on Tue, Nov 1, 2022, 6:47 AM GMT (just now)
 ## Chromedriver logs introduced
 ```
 C02W63XEHTD6:selenium-ruby-net-read-timeout adambons$ bundle exec ruby -d test_selenium.rb
@@ -608,6 +609,10 @@ D, [2022-10-31T21:57:33.072024 #62989] DEBUG -- : #<ChildProcess::Unix::ForkExec
         from test_selenium.rb:34:in `<main>'
 C02W63XEHTD6:selenium-ruby-net-read-timeout adambons$ 
 ```
+
+## Raised issue with selenium team
+https://github.com/SeleniumHQ/selenium/issues/11200
+Advised likely chromedriver issue - raise an issue with them
 ## Updated test script
 ```
 C02W63XEHTD6:capybara-experiment-net-read-timeout adambons$ bundle exec ruby -d test_selenium.rb

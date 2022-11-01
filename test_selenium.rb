@@ -19,7 +19,8 @@ end
 def register_chrome_browser
     options = Selenium::WebDriver::Chrome::Options.new(logging_prefs: { browser: 'ALL' },
         detach: true, args: ['--ignore-certificate-errors', '--no-sandbox', '--disable-gpu', '--autoplay-policy=no-user-gesture-required'])
-    @driver = Selenium::WebDriver.for :chrome, :capabilities => options
+    service = Selenium::WebDriver::Service.chrome(args: ['--verbose'])
+    @driver = Selenium::WebDriver.for :chrome, :capabilities => options, service: service
 end
 
 def recreate_issue(delay_between_calls)
